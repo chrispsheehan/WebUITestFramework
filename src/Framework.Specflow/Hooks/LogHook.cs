@@ -2,7 +2,7 @@ using TechTalk.SpecFlow;
 using BoDi;
 using NLog;
 
-namespace Framework.Hooks
+namespace FrameworkSpecflow.Hooks
 {
     [Binding]
     public class LogHook

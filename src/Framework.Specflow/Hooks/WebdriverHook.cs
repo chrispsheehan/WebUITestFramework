@@ -1,7 +1,7 @@
 using TechTalk.SpecFlow;
 using BoDi;
 
-namespace Framework.Hooks
+namespace Framework.Specflow.Hooks
 {
     [Binding]
     public class WebdriverHook
