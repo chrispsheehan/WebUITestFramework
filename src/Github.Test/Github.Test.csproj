@@ -23,7 +23,7 @@
     </ItemGroup>
   
     <ItemGroup>
-        <ProjectReference Include="..\Framework\Framework.csproj" />
+        <ProjectReference Include="..\Framework.Specflow\Framework.Specflow.csproj" />
       </ItemGroup>
 
   </Project>

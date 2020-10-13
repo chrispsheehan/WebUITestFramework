@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Github.Test", "Github.Test\Github.Test.csproj", "{E92EA2DF-14C0-49E4-8260-F4E295C09E8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Framework.csproj", "{8C0F3704-CC5F-4265-97F9-ADBE6E7036D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Specflow", "Framework.Specflow\Framework.Specflow.csproj", "{8C0F3704-CC5F-4265-97F9-ADBE6E7036D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
