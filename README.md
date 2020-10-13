@@ -31,12 +31,6 @@ docker build -t test-box .
 docker run test-box
 ```
 
-#### [To run with filters]("https://docs.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests")
-- Has tag: ```dotnet test --filter Category=sweary```
-- Does not have tag: ```dotnet test --filter Category!=sweary```
-- Feature: ```dotnet test --filter FeatureTitle=Find_Profanity```
-- Scenario: ```dotnet test --filter Description=Profanity_Found```
-- Combinations: ```dotnet test --filter "FeatureTitle=Find_Profanity&Description=Profanity_Found"```
 
 #### Expected output
 ```
