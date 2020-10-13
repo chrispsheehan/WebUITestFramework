@@ -4,9 +4,14 @@
       <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
   
-    <ItemGroup>   
+    <ItemGroup>
+        <Content Include="../nlog.config"> 
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>           
+        
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
         <PackageReference Include="SpecFlow" Version="3.3.30" />
+        <PackageReference Include="nlog" Version="4.7.4" />
       </ItemGroup>
 
   </Project>
