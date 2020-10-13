@@ -14,4 +14,8 @@
         <PackageReference Include="nlog" Version="4.7.4" />
       </ItemGroup>
 
+      <ItemGroup>
+        <ProjectReference Include="..\Framework.Webdriver\Framework.Webdriver.csproj" />
+    </ItemGroup>      
+
   </Project>

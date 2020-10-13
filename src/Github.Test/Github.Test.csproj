@@ -24,6 +24,6 @@
   
     <ItemGroup>
         <ProjectReference Include="..\Framework.Specflow\Framework.Specflow.csproj" />
-      </ItemGroup>
+    </ItemGroup>
 
   </Project>
