@@ -1,10 +1,10 @@
 using TechTalk.SpecFlow;
 using System;
 
-namespace Github.Test.Hooks
+namespace Framework.Hooks
 {
     [Binding]
-    public class LogHook
+    public class Hook
     {
         [BeforeScenario]
         public void BeforeScenario()

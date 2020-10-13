@@ -7,7 +7,10 @@
     <ItemGroup>   
       <Content Include="xunit.runner.json"> 
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
+      </Content> 
+      <Content Include="specflow.json"> 
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>      
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
       <PackageReference Include="SpecFlow" Version="3.3.30" />
       <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.30" />
