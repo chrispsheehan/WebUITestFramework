@@ -5,10 +5,10 @@
     </PropertyGroup>
   
     <ItemGroup>   
-      <Content Include="xunit.runner.json"> 
+      <Content Include="../xunit.runner.json"> 
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content> 
-      <Content Include="specflow.json"> 
+      <Content Include="../specflow.json"> 
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>      
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
