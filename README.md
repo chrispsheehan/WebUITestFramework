@@ -78,3 +78,10 @@ error MSB4018: The "GenerateFeatureFileCodeBehindTask" task failed unexpectedly.
  ```
 export MSBUILDSINGLELOADCONTEXT=1
  ```
+
+###### Mac ChromeDriver error
+ - Issue: “chromedriver” cannot be opened because the developer cannot be verified.
+ - Fix: Run the below in Terminal
+```
+xattr -d com.apple.quarantine chromedriver
+ ```
