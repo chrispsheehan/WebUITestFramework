@@ -1,5 +1,6 @@
 using TechTalk.SpecFlow;
 using BoDi;
+using Framework.Webdriver;
 
 namespace Framework.Specflow.Hooks
 {
@@ -9,13 +10,13 @@ namespace Framework.Specflow.Hooks
         [BeforeScenario]
         public void BeforeScenario(IObjectContainer objectContainer)
         {
-            objectContainer.RegisterInstanceAs("asasas");
+            objectContainer.RegisterInstanceAs(new WebdriverFactory().Get());
         }
 
         [AfterScenario]
-        public void AfterScenario()
+        public void AfterScenario(WebdriverManager webdriverManager)
         {
-
+            webdriverManager.Stop();
         }
     }
 }
