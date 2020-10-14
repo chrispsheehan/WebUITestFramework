@@ -1,5 +1,5 @@
 {
     "stepAssemblies": [
-        { "assembly": "Framework" }
+        { "assembly": "Framework.Specflow" }
     ]
 }
