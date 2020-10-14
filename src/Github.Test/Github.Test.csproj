@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+  
+    <ItemGroup>   
+      <Content Include="../xunit.runner.json"> 
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content> 
+      <Content Include="../specflow.json"> 
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>      
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />      
+      <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="86.0.4240.2200" />
+      <PackageReference Include="SpecFlow" Version="3.3.30" />
+      <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.30" />
+      <PackageReference Include="SpecFlow.xUnit" Version="3.3.30" />
+      <PackageReference Include="xUnit" Version="2.4.1" />    
+      <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+  
+    <ItemGroup>
+      <ProjectReference Include="..\Framework.Specflow\Framework.Specflow.csproj" />      
+    </ItemGroup>
+
+  </Project>
