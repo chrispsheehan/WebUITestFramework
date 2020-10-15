@@ -9,12 +9,6 @@ namespace WebUITestFramework.Steps
         public HomePageSteps()
         {
         }
-
-        [Given(@"I navigated to the Github home screen")]
-        public void GivenINavigatedToTheGithubHomeScreen()
-        {
-
-        }
         
         [Given(@"I have not logged in")]
         public void GivenIHaveNotLoggedIn()
