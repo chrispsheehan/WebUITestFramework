@@ -7,4 +7,4 @@ Background: I_am_on_the_homepage
 
 Scenario: Login_Fields_Are_Present
     And I have not logged in
-    Then I can see the login and password fields
+    Then I can see the login and email fields

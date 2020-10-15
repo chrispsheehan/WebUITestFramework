@@ -17,5 +17,15 @@ namespace WebUITestFramework.PageObjects
         {
             return _webdriverFind.Element(HomePageElements.SignInBtn).IsDisplayed();
         }
+
+        public bool UserFieldIsdisplayed()
+        {
+            return _webdriverFind.Element(HomePageElements.UserField).IsDisplayed();
+        }
+
+        public bool EmailFieldIsdisplayed()
+        {
+            return _webdriverFind.Element(HomePageElements.EmailField).IsDisplayed();
+        }
     }
 }
