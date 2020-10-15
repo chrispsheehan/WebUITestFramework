@@ -6,7 +6,8 @@ namespace Framework.Webdriver
     {
         public static bool IsDisplayed(this IWebElement webElement)
         {
-            try{
+            try
+            {
                 return webElement.Displayed;
             }
             catch

@@ -1,3 +1,4 @@
+using NLog;
 using OpenQA.Selenium;
 
 namespace Framework.Webdriver
@@ -6,6 +7,8 @@ namespace Framework.Webdriver
     {
         private readonly IWebDriver _driver;
 
+        private readonly Logger _log = LogManager.GetCurrentClassLogger();
+
         public WebdriverManager(IWebDriver driver)
         {
             _driver = driver;
@@ -13,6 +16,8 @@ namespace Framework.Webdriver
 
         public void Stop()
         {
+            _log.Info("Closing web driver");
+
             _driver.Close();
         }
     }
