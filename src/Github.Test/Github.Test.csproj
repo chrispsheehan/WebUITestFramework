@@ -11,7 +11,8 @@
       <Content Include="../specflow.json"> 
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>      
-      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />      
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />   
+      <PackageReference Include="Selenium.Webdriver" Version="3.141.0" />         
       <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="86.0.4240.2200" />
       <PackageReference Include="SpecFlow" Version="3.3.30" />
       <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.30" />
