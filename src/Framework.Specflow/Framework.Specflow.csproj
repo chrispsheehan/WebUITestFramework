@@ -11,7 +11,7 @@
         
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
         <PackageReference Include="SpecFlow" Version="3.3.30" />
-        <PackageReference Include="nlog" Version="4.7.4" />
+        <PackageReference Include="nlog" Version="4.7.5" />
       </ItemGroup>
 
       <ItemGroup>
