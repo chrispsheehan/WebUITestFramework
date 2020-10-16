@@ -8,7 +8,6 @@ namespace Framework.Settings
 
             return new TestSettings
             {
-                BaseUrl = configRoot.GetAppSetting("BaseUrl"),
                 WaitSeconds = configRoot.GetAppSetting("WaitSeconds"),
                 BrowserName = configRoot.GetAppSetting("BrowserName"),
                 BrowserType  = configRoot.GetAppSetting("BrowserType")
@@ -20,6 +19,7 @@ namespace Framework.Settings
             return new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile(settingsFileName)
+                .AddEnvironmentVariables()
                 .Build();
         }
 
