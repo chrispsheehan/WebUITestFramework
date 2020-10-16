@@ -10,7 +10,10 @@
       </Content> 
       <Content Include="../specflow.json"> 
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>      
+      </Content> 
+      <Content Include="Github./Github.TestSettings.json"> 
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>           
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />   
       <PackageReference Include="Selenium.Webdriver" Version="3.141.0" />         
       <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="86.0.4240.2200" />

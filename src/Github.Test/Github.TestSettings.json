@@ -1,0 +1,5 @@
+{
+    "WaitSeconds" : "10",
+    "BrowserName" : "chrome",
+    "BrowserType" : "remote"
+}
