@@ -17,7 +17,7 @@ namespace Framework.Webdriver
             _log.Info("Initialising web driver");
 
             // _driver = new ChromeDriver();
-            // _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
 
             var chromeOptions = new ChromeOptions
             {
@@ -28,6 +28,8 @@ namespace Framework.Webdriver
             chromeOptions.AddArgument("--start-maximised");
 
             _driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), chromeOptions);
+
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);            
         }
 
         public IWebDriver Get()
