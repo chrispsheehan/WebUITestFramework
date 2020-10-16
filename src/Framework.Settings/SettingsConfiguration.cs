@@ -1,17 +1,13 @@
+using System.IO;
+using Microsoft.Extensions.Configuration;
+
 namespace Framework.Settings
 {
     public static class SettingsConfiguration
     {
-        public static TestSettings GetSettings(string settingsFileName)
+        public static TestSettings Build()
         {
-            var configRoot = BuildConfig(settingsFileName);
-
-            return new TestSettings
-            {
-                WaitSeconds = configRoot.GetAppSetting("WaitSeconds"),
-                BrowserName = configRoot.GetAppSetting("BrowserName"),
-                BrowserType  = configRoot.GetAppSetting("BrowserType")
-            };  
+            return BuildConfig(GetConfigFile()).Get<TestSettings>();
         }
 
         private static IConfigurationRoot BuildConfig(string settingsFileName)
@@ -22,16 +18,14 @@ namespace Framework.Settings
                 .AddEnvironmentVariables()
                 .Build();
         }
-
-        private static string GetAppSetting(this IConfigurationRoot config, string settingName)
+        private static string GetConfigFile()
         {
-            string content = config[settingName];
-
-            if (!string.IsNullOrEmpty(content))
+            foreach(string file in Directory.GetFiles(Directory.GetCurrentDirectory(), "*TestSettings.json"))
             {
-                return content;
+                return Path.GetFileName(file);
             }
-            throw new InvalidOperationException($"Could not read app setting for {settingName}");
-        }        
+
+            return null;
+        }
     }
 }

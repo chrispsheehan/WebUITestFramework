@@ -11,7 +11,7 @@
       <Content Include="../specflow.json"> 
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content> 
-      <Content Include="./Github.TestSettings.json"> 
+      <Content Include="./*.TestSettings.json"> 
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>           
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />   
