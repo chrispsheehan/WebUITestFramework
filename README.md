@@ -19,7 +19,7 @@
 #### Run the tests on your machine OR...
 
 ```
-cd src
+cd src/Github.Test
 dotnet test
 ```
 
@@ -27,8 +27,7 @@ dotnet test
 #### ...in [Docker](https://www.docker.com/)
 
 ```
-docker build -t test-box .
-docker run test-box
+TBC
 ```
 
 
