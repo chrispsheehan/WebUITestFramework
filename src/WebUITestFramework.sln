@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Specflow", "Frame
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Webdriver", "Framework.Webdriver\Framework.Webdriver.csproj", "{FF998EB4-9945-4E29-B7A6-8016183F5E93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Settings", "Framework.Settings\Framework.Settings.csproj", "{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{FF998EB4-9945-4E29-B7A6-8016183F5E93}.Release|x64.Build.0 = Release|Any CPU
 		{FF998EB4-9945-4E29-B7A6-8016183F5E93}.Release|x86.ActiveCfg = Release|Any CPU
 		{FF998EB4-9945-4E29-B7A6-8016183F5E93}.Release|x86.Build.0 = Release|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Debug|x64.Build.0 = Debug|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Debug|x86.Build.0 = Debug|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Release|x64.ActiveCfg = Release|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Release|x64.Build.0 = Release|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Release|x86.ActiveCfg = Release|Any CPU
+		{8E8C5CF5-FECC-4B88-A00C-EB7BD7903E15}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
