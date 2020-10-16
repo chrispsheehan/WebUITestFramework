@@ -16,6 +16,8 @@ namespace Framework.Specflow.Hooks
         [AfterScenario]
         public void AfterScenario(WebdriverManager webdriverManager)
         {
+            webdriverManager.TakeScreenshot();
+
             webdriverManager.Stop();
         }
     }
