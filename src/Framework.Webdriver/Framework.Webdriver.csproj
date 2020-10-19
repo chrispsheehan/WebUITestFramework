@@ -10,6 +10,8 @@
         <PackageReference Include="nlog" Version="4.7.5" />
         <PackageReference Include="Selenium.Webdriver" Version="3.141.0" />
         <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="86.0.4240.2200" />       
-    </ItemGroup>
 
+        <ProjectReference Include="..\Framework.Settings\Framework.Settings.csproj" />         
+    </ItemGroup>
+    
   </Project>

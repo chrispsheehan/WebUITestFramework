@@ -1,5 +1,6 @@
 {
     "WaitSeconds" : 10,
     "BrowserName" : "chrome",
-    "BrowserType" : "remote"
+    "BrowserType" : "remote",
+    "RemoteUrl" : "http://localhost:4444/wd/hub"
 }
