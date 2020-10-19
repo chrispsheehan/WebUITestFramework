@@ -15,7 +15,8 @@
       </ItemGroup>
 
       <ItemGroup>
+        <ProjectReference Include="..\Framework.Settings\Framework.Settings.csproj" />        
         <ProjectReference Include="..\Framework.Webdriver\Framework.Webdriver.csproj" />
-    </ItemGroup>      
+      </ItemGroup>      
 
   </Project>

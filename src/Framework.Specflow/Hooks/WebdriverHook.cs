@@ -8,9 +8,9 @@ namespace Framework.Specflow.Hooks
     public class WebdriverHook
     {
         [BeforeScenario]
-        public void BeforeScenario(IObjectContainer objectContainer)
+        public void BeforeScenario(IObjectContainer objectContainer, WebdriverFactory webdriverFactory)
         {
-            objectContainer.RegisterInstanceAs(new WebdriverFactory().Get());
+            objectContainer.RegisterInstanceAs(webdriverFactory.Get());
         }
 
         [AfterScenario]
