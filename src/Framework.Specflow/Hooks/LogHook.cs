@@ -7,34 +7,40 @@ namespace Framework.Specflow.Hooks
     [Binding]
     public class LogHook
     {
+        private static Logger _frameworkLog;
+
         [BeforeTestRun]
-        public static void BeforeTestRun(IObjectContainer objectContainer)
+        public static void BeforeTestRun()
         {
-            objectContainer.RegisterInstanceAs(LogManager.GetCurrentClassLogger());
+            _frameworkLog  = LogManager.GetCurrentClassLogger();
         }
 
         [BeforeFeature]
-        public static void BeforeFeature(Logger log, FeatureContext featureContext)
+        public static void BeforeFeature(FeatureContext featureContext)
         {
-            log.Info($"Starting Feature: {featureContext.FeatureInfo.Title}");
+            _frameworkLog.Info($"Starting Feature: {featureContext.FeatureInfo.Title}");
         }
 
         [BeforeScenario]
-        public void BeforeScenario(Logger log, ScenarioContext scenarioContext)
+        public void BeforeScenario(IObjectContainer objectContainer, ScenarioContext scenarioContext)
         {
-            log.Info($"Starting Scenario: {scenarioContext.ScenarioInfo.Title}");
+            Logger scenarioLog = LogManager.GetCurrentClassLogger();
+
+            objectContainer.RegisterInstanceAs(scenarioLog);
+
+            scenarioLog.Info($"Starting Scenario: {scenarioContext.ScenarioInfo.Title}");
         }
 
         [AfterScenario]
-        public void AfterScenario(Logger log, ScenarioContext scenarioContext)
+        public void AfterScenario(Logger scenarioLog, ScenarioContext scenarioContext)
         {
-            log.Info($"Finishing Scenario: {scenarioContext.ScenarioInfo.Title}");
+            scenarioLog.Info($"Finishing Scenario: {scenarioContext.ScenarioInfo.Title}");
         }
 
         [AfterFeature]
-        public static void AfterFeature(Logger log, FeatureContext featureContext)
+        public static void AfterFeature(FeatureContext featureContext)
         {
-            log.Info($"Finishing Feature: {featureContext.FeatureInfo.Title}");
+            _frameworkLog.Info($"Finishing Feature: {featureContext.FeatureInfo.Title}");
         }
     }
 }

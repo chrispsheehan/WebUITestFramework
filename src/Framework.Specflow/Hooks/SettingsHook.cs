@@ -7,10 +7,18 @@ namespace Framework.Specflow.Hooks
     [Binding]
     public static class SettingsHook
     {
+        public static TestSettings AppSettings;
+
         [BeforeTestRun]
-        public static void BeforeTestRun(IObjectContainer objectContainer)
+        public static void BeforeTestRun()
         {
-            objectContainer.RegisterInstanceAs(SettingsConfiguration.Build());
+            AppSettings = SettingsConfiguration.Build();
+        }
+
+        [BeforeFeature]
+        public static void BeforeFeature(IObjectContainer objectContainer)
+        {
+            objectContainer.RegisterInstanceAs(AppSettings);
         }
     }
 }
