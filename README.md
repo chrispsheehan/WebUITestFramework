@@ -16,18 +16,29 @@
 - Windows: [Open command prompt in repository folder](https://helpdeskgeek.com/how-to/open-command-prompt-folder-windows-explorer/)
 - Execute the below commands
 
-#### Run the tests on your machine OR...
+#### Run the tests locally on your machine OR...
+
+Set tests to 'local' via .TestSettings.Json
+```
+"BrowserType" : "local"
+```
 
 ```
 cd src/Github.Test
 dotnet test
 ```
 
+#### ...via [Selenium Grid]("https://github.com/SeleniumHQ/selenium/wiki/Grid2") and [Docker](https://www.docker.com/)
 
-#### ...in [Docker](https://www.docker.com/)
+Set tests to 'remote' via .TestSettings.Json
+```
+"BrowserType" : "remote"
+```
 
 ```
-TBC
+docker-compose up -d --scale chrome=[NumberOfConcurrentTests]
+cd src/Github.Test
+dotnet test
 ```
 
 
