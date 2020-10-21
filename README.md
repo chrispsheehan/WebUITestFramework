@@ -17,24 +17,22 @@
 - Execute the below commands
 
 #### Run the tests locally on your machine OR...
-
-Set tests to 'local' via .TestSettings.Json
+Set in [Project].TestSettings.Json file:
 ```
 "BrowserType" : "local"
 ```
-
+Commands:
 ```
 cd src/Github.Test
 dotnet test
 ```
 
 #### ...via [Selenium Grid]("https://github.com/SeleniumHQ/selenium/wiki/Grid2") and [Docker](https://www.docker.com/)
-
-Set tests to 'remote' via .TestSettings.Json
+Set in [Project].TestSettings.Json file:
 ```
 "BrowserType" : "remote"
 ```
-
+Commands:
 ```
 docker-compose up -d --scale chrome=[NumberOfConcurrentTests]
 cd src/Github.Test
